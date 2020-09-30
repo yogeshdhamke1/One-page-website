@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    
+    font-family: 'Acme', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    padding-bottom: 0px;
+}
+.navbar .container{
+    background: black;
+    color: white;
+    
+}
+.navbar .container a{
+    font-family: 'Acme', sans-serif;
+    color: white;
+}
+.navbar .container a:hover{
+    background: red;
+    color: white;
+}
+.navbar-toggle span{
+    background: red;
+}
+.serDiv{
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+/* servieces */
+
+.services{
+    background: #ffffff;
+    text-align: center;
+}
+.services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #f82525;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+.cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+.service{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.service:hover{
+    background: rgb(245, 85, 85);
+    color: white;
+}
+.service p:hover{
+    
+    color: white;
+}
+.service i{
+    color: #f82525;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.service h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* margin: 0; */
+    /* margin-bottom: 15px; */
+    /* overflow-x:hidden; */
+
+}
+.service p{
+    color: rgb(15, 14, 14);
+    font-size: 15px;
+    font-weight: 500;
+}
+@media screen and (max-width:800px) {
+    .service{
+        width: 50%;
+    }
+}
+@media screen and (max-width:500px) {
+    .service{
+        width: 100%;
+    }
+}
+
+/* team */
+.team{
+    background: #ffffff;
+    text-align: center;
+}
+.team h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #f82525;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+.box-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.single-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 300px; */
+    height: auto;
+    border-radius: 4px;
+    background: #fff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+.img-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.single-box:nth-child(1) .img-area{
+    background-image: url(image/Team/team1.jpg);
+}
+.single-box:nth-child(2) .img-area{
+    background-image: url(image/Team/team2.jpg);
+}
+.single-box:nth-child(3) .img-area{
+    background-image: url(image/Team/team3.jpg);
+}
+.header-text{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.img-text{
+    font-family: 'Poppins';
+    padding: 10px;
+}
+.img-text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.single-box:hover{
+    background: #e93b3b;
+    color: #fff;
+}
+
+/* Form */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #d12f2a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  } */
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  /* .contnact{
+    background: #ffffff;
+    text-align: center;
+} */
+.contnact h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #f82525;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    background: #ffffff;
+    
+}
+.fotter{
+    background: #ffffff;
+    text-align: center;
+}
+.fotter h1{
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #f82525;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    background: #ffffff;
+    
+}
+
+
